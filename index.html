@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ELABORE</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+  
+<body>
+  <script>
+
+    conversionTag = "https://ad.doubleclick.net/ddm/adj/Nxxx.xxxxxx.nso.codesrv/Bxxxxxxx;sz=1x2;ord="
+    
+    var randomNumber = Math.floor((Math.random() * 1000000000000) + 1);
+    var scriptTag = document.createElement("script");
+    scriptTag.src = conversionTag + randomNumber + "?";
+    scriptTag.language = "JavaScript1.1";
+    
+    var insertionNode = document.body.firstChild;
+    insertionNode.parentNode.insertBefore(scriptTag, insertionNode);
+    
+    </script>
+       
+  <header>
+      <img src="image/logo.png" class="openlogo">
+    <nav>
+      <div class="margee"> 
+        <img src="image/logo.png" class="logo">
+      </div>
+      <div class="marge">
+       <ul>
+        
+        <li><a href="/index.html" class="active">Home</a></li>
+        <li><a href="/sobre.html">Sobre</a></li>
+        <li><a href="/servicos.html">Serviços</a></li>
+        <li><a href="/contato.html">Contato</a></li>
+        
+        
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section >
+      <div class="slideshow"><A href="servicos.html">
+        <img src="image/1.png" class="slide">
+        <img src="image/2.png" class="slide">
+        <img src="image/3.png" class="slide">
+      </A>
+      </div>
+      
+        <h4 class="bemvindo">Seja Bem Vindo!</h4>
+      
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+  <script src="js/banner_inter"></script>
+  
+</body>
+
+<footer>
+    <section>
+      <p>&copy; 2023 Empresa ELABORE DESIGNER. Todos os direitos reservados.</p>
+      <p>Desenvolvido por RsCoDE</p>
+    </section>
+  </footer>
+</html>

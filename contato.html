@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>contato</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <script>
+
+    conversionTag = "https://ad.doubleclick.net/ddm/adj/Nxxx.xxxxxx.nso.codesrv/Bxxxxxxx;sz=1x2;ord="
+    
+    var randomNumber = Math.floor((Math.random() * 1000000000000) + 1);
+    var scriptTag = document.createElement("script");
+    scriptTag.src = conversionTag + randomNumber + "?";
+    scriptTag.language = "JavaScript1.1";
+    
+    var insertionNode = document.body.firstChild;
+    insertionNode.parentNode.insertBefore(scriptTag, insertionNode);
+    
+    </script>
+  <header>
+    <img src="image/logo.png" class="openlogo">
+    <nav>
+      <div class="margee"> 
+        <img src="image/logo.png" class="logo">
+      </div>
+      <div class="marge">
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/sobre.html">Sobre</a></li>
+        <li><a href="/servicos.html">Serviços</a></li>
+        <li><a href="/contato.html"class="active" >Contato</a></li>
+      </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <br><br>
+
+    <div class="whatsapp">
+        <a href="https://api.whatsapp.com/send?phone=5562993301650" target="_blank">
+          <img src="image/wtt.png" alt=""></a>
+          <br><br><br>
+        
+    </div>
+
+
+    <div class="formulario">
+      <h3>Faça um orçamento </h3>
+      <form action="https://formspree.io/f/xoqzlywl" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+    
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="_replyto" required>
+    
+        <label for="assunto">Assunto:</label>
+        <input type="text" id="assunto" name="assunto" required>
+    
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" required></textarea>
+    
+        <button type="submit">Enviar</button> 
+            
+      </form>
+          
+    </div>
+
+    
+  </main>
+
+  <footer>
+    <section>
+      
+      <div class="direitos-autorais">
+      <p>&copy; 2023 Empresa ELABORE DESIGNER. Todos os direitos reservados.</p>
+      <p>Desenvolvido por RsCoDE</p>
+    </section>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

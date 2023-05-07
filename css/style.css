@@ -1,0 +1,372 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+  header {
+    background-color: #047474;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+  }
+
+    nav {
+  
+ 
+    display: flex;
+    justify-content: left;
+    align-items: center;
+ }
+ .logo{
+  width: 180px;
+
+
+ }
+.openlogo{
+
+  width: 0px;
+}
+.marge{
+
+  margin-left: auto;
+}
+.margee{
+
+  margin-left: 30px;
+}
+
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin: 0;
+  }
+  
+  nav a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.5s ease;
+  }
+  
+  nav a.active,
+  nav a:hover {
+    background-color: #f00;
+  }
+  
+  .banner {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/image/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .banner h1 {
+    font-size: 48px;
+    margin: 0;
+  }
+  
+  .banner p {
+    font-size: 24px;
+  }
+
+  .formulario {
+    width: 100%;
+    max-width: 550px;
+    margin:0 auto;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    margin-bottom: 100px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  textarea {
+    height: 40px;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #3e8e41;
+  }
+
+  
+footer {
+
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #047474;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: bold;
+    font-size: 12pt;
+}
+.whatsapp img {
+  display: flex;
+  margin-left: 30px;
+  margin-top: 150px;
+  width: 180px;
+  height: 50px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: black;
+  font-style: bold;
+  float: left;
+  }
+ .organizar{
+  display: flex;
+  margin-left: 0px;
+  margin-top: 30px;
+  font-style: bold;
+  float: left;
+  color: black;
+  text-align: left;
+  flex-wrap: wrap;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  
+  padding: 15px;
+} 
+.slideshow {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+.bemvindo{
+ 
+ width: 0px;
+  
+
+}
+.services {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service {
+  width: 300px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.service img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+.service img:hover {
+  
+ 
+  transform: scale(1.2);
+}
+
+.service h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.service p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+.apresentacao-empresa {
+
+max-width: 800px;
+margin: 0 auto;
+padding: 18px;
+font-size: 14px;
+line-height: 1.5;
+text-align: justify;
+}
+
+.apresentacao-empresa h2 {
+  
+font-size: 24px;
+font-weight: bold;
+text-align: center;
+margin-bottom: 20px;
+}
+
+/* Estilo para mobile */
+@media (max-width: 500px) {
+  /* Define a largura do menu */
+  nav{
+    width: 50%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+   
+  }
+  
+  nav li {
+    margin: 0;
+    font-size: small;
+  }
+  
+  nav a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.5s ease;
+  }
+  
+  nav a.active,
+  nav a:hover {
+    background-color: #f00;
+  }
+
+  /* Define o tamanho da logo */
+  .openlogo{
+    position: static;
+    margin-left: 120px;
+    margin-top: 5px;
+    width: 150px;
+    height: auto;
+  }
+  .logo{
+
+    width:0px;
+  }
+  .slide{
+   width: 100%;
+   height: auto;
+   margin-top: 120px;
+
+  }
+  .bemvindo{
+
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    color:#047474;
+    width: 209px;
+    margin-top: -193px;
+    margin-left: auto;
+    padding-left: 20%;
+    padding-right: 12%;
+    padding-top: 1%;
+
+  }
+  .apresentacao-empresa {
+
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 18px;
+    font-size: 10px;
+    line-height: 1.5;
+    text-align: justify;
+    scroll-behavior: auto;
+    }
+  .apresentacao-empresa h2 {
+  
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    }
+
+  /* Define o espaçamento do footer */
+  footer {
+    padding: 20px 0;
+  }
+  .formulario {
+    width: 100%;
+    max-width: 300px;
+    margin:0 auto;
+  }
+  form {
+    display: block;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    margin-bottom: 200px;
+  }
+  .whatsapp img {
+    display: flex;
+    margin-left: 30%;
+    margin-top: 50px;
+    width: 180px;
+    height: 50px;
+    margin-right: 150px;
+    float: center;
+    }
+  
+ }
